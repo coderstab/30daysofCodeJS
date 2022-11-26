@@ -1,0 +1,7 @@
+<html>
+<script>
+  const matches = (obj, source) =>
+       Object.keys(source).every(key => obj.hasOwnProperty(key) && obj[key]=== source[key]);
+		console.log(matches({age:25,hair:'black',beard:true},{hair:'black',beard:true}));
+</script>
+</html>
