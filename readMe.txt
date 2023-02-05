@@ -32,3 +32,18 @@ var arr = ["apple", "mango",
         
     }
     funRem(arr)
+    
+3 => Counting the occurrences / frequency of array elements
+Ans => 
+var arr= [5, 5, 5, 2, 2, 2, 2, 2, 9, 4];
+result = { };
+function funFrq(arr){
+      for(var i=0;i<arr.length;i++){
+          if(!result[arr[i]]){
+              result[arr[i]] = 0;
+              ++result[arr[i]]
+          }
+      }
+      console.log(result);
+}
+funFrq(arr)
