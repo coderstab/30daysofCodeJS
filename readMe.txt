@@ -15,4 +15,20 @@ for(i=0;i<length-1;i++){
 }
 console.log(resArr)
 }
-funFind(arr)
+funFind(arr);
+2 => How to remove duplicate elements in an array?
+Ans => 
+var arr = ["apple", "mango", 
+        "apple", "orange", "mango", "mango"];
+        var resArr = [];
+  
+    function funRem(arr){
+        for(let i=0;i<arr.length;i++){
+            if(resArr.indexOf(arr[i]) === -1){
+                resArr.push(arr[i]);
+            }
+        }
+        console.log(resArr)
+        
+    }
+    funRem(arr)
