@@ -47,3 +47,13 @@ function funFrq(arr){
       console.log(result);
 }
 funFrq(arr)
+
+4 => Rotate array using the Dth location 
+Ans =>
+a = [1,2,3,4,5]
+function rotLeft(a, d) {
+    const removed = a.splice(0,d);
+    //console.log(removed)
+   console.log( [...a, ...removed]);
+}
+rotLeft(a, 3)
